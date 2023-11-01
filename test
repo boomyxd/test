@@ -7,6 +7,11 @@ $HelloWorldForm=New-Object $FormObject
 $HelloWorldForm.ClientSize='500,300'
 $HelloWorldForm.Text='Hello'
 
+$LabelTitle=New-Object $LabelObject
+$LabelTitle.Text = 'hej doodiemand'
+
+$HelloWorldForm.Controls.AddRange(@($LabelTitle))
+
 $HelloWorldForm.ShowDialog()
 
 $HelloWorldForm.Dispose()
