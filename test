@@ -1,0 +1,12 @@
+Add-Type -AssemblyName System.Windows.Forms
+
+$FormObject = [System.Windows.Forms.Form]
+$LabelObject = [System.Windows.Forms.Label]
+
+$HelloWorldForm=New-Object $FormObject
+$HelloWorldForm.ClientSize='500,300'
+$HelloWorldForm.Text='Hello'
+
+$HelloWorldForm.ShowDialog()
+
+$HelloWorldForm.Dispose()
